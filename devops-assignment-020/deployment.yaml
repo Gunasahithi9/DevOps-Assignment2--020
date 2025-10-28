@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movie-ticket-booking-deployment
+  labels:
+    app: movie-ticket-booking
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: movie-ticket-booking
+  template:
+    metadata:
+      labels:
+        app: movie-ticket-booking
+    spec:
+      containers:
+        - name: movie-ticket-booking
+          image: akshitha933/movie-ticket-booking:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80

@@ -1,0 +1,81 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.movie-selection select {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.seats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.seat {
+  background-color: #444;
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.seat.selected {
+  background-color: #00bcd4;
+  transform: scale(1.1);
+}
+
+.seat.occupied {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.summary {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.book-btn {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #0288d1;
+}

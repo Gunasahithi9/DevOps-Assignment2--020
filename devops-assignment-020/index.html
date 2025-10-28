@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Ticket Booking System</h1>
+
+    <div class="movie-selection">
+      <label for="movie">Select Movie:</label>
+      <select id="movie">
+        <option value="150">Avengers: Endgame (₹150)</option>
+        <option value="120">Inception (₹120)</option>
+        <option value="100">Interstellar (₹100)</option>
+        <option value="180">Joker (₹180)</option>
+      </select>
+    </div>
+
+    <div class="seat-container">
+      <p>Select Your Seats:</p>
+      <div class="seats">
+        <!-- Simple 5x5 grid -->
+        <div class="row">
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+        </div>
+        <div class="row">
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+        </div>
+        <div class="row">
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+        </div>
+        <div class="row">
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+        </div>
+        <div class="row">
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+          <span class="seat"></span>
+        </div>
+      </div>
+    </div>
+
+    <p class="summary">
+      You have selected <span id="count">0</span> seat(s) for a price of ₹<span id="total">0</span>
+    </p>
+
+    <button id="bookBtn" class="book-btn">Book Tickets</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
